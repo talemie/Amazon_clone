@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+button:active {
+  /* CSS properties for button when clicked */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

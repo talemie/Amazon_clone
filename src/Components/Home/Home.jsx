@@ -2,13 +2,14 @@ import React from 'react'
 import './home.css'
 import Product from '../Product/Product';
 function Home() {
+	// product images destructured here
     const [image1, image2, image3, image4, image5, image6] = [
-			"https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg",
-			"https://m.media-amazon.com/images/I/71n5vk4vB-L._AC_UL480_FMwebp_QL65_.jpg",
-			"https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_UL480_FMwebp_QL65_.jpg",
-			"https://m.media-amazon.com/images/I/81MZ5D1wHpL._AC_UL480_QL65_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg",
+			"https://m.media-amazon.com/images/I/61S+R5SLmrL._AC_SY200_.jpg",
+			"https://m.media-amazon.com/images/I/51IFiSD+kCL._AC_SY200_.jpg",
+			"https://m.media-amazon.com/images/I/71DDA+p+QqL._AC_UY218_.jpg",
+			"https://m.media-amazon.com/images/I/51XLf5D0neL._AC_UY218_.jpg",
+			"https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UY218_.jpg",
+			"https://m.media-amazon.com/images/I/81ds-A08OxL._AC_UL320_.jpg",
 		];
   return (
 		<div className="home">
@@ -21,14 +22,14 @@ function Home() {
 				<div className="home__row">
 					<Product
 						id={1}
-						title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+						title="HP DeskJet 2755e Wireless Color inkjet-printer, Print, scan, copy, Easy setup, Mobile printing, Best-for home, Instant Ink with HP+,white"
 						image={image1}
-						price={120}
+						price={64.99}
 						rating={5}
 					/>
 					<Product
 						id={2}
-						title="Brother Genuine Cartridge TN760 High Yield Black Toner,1 Pack"
+						title="Apple iPad Air 10.5-inch (3rd Gen) Tablet A2152 (Wi-Fi Only) - 64GB / Space Gray (Renewed)"
 						image={image2}
 						price={89.99}
 						rating={4}
@@ -37,28 +38,34 @@ function Home() {
 				<div className="home__row">
 					<Product
 						id={3}
-						title="Acer Aspire 5 A515-56-36UT, 15.6' Full HD Display, 11th Gen Intel Core i3-1115G4 Processor, 4GB DDR4, 128GB ..."
+						title="Apple Watch Series 6 (GPS, 44mm) - Blue Aluminum Case with Deep Navy Sport Band (Renewed)"
 						image={image3}
 						price={219.99}
 						rating={2}
 					/>
 					<Product
 						id={4}
-						title="Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB, Adjustable ..."
+						title="[Apple MFi Certified] AirPods Pro Wireless Earbuds Bluetooth in Ear Light-Weight Headphones Built-in Microphone, with Touch Control, Noise Cancelling, Charging case"
 						image={image4}
-						price={59.99}
+						price={199.99}
 						rating={3}
 					/>
 					<Product
 						id={5}
-						title="Ailun Glass Screen Protector Compatible for iPhone 11/iPhone XR, 6.1 Inch 3 Pack Tempered Glass"
+						title="BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory Earmuffs (Blue)"
 						image={image5}
-						price={29.99}
+						price={49.99}
 						rating={4}
 					/>
 				</div>
 				<div className="home__row">
-					<Product id={6} title="" image={image6} price={1119.99} rating={5} />
+					<Product
+						id={6}
+						title="SUPERJARE TV Stand for 55 Inch TV, Entertainment Center with Adjustable Shelf, 2 Cabinets, TV Console Table, Media Console, Solid Wood Feet, Cord Holes, for Living Room, Bedroom, Rustic Brown"
+						image={image6}
+						price={1119.99}
+						rating={5}
+					/>
 				</div>
 			</div>
 		</div>
