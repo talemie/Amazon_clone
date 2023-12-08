@@ -35,7 +35,9 @@
     border: 1px solid;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
     color: #111;
+    padding: 3px;
 }
 .product__rating {
     display: flex;

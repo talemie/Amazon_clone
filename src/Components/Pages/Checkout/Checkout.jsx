@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./checkout.css";
 import Subtotal from "../Subtotal/Subtotal";
 import CheckoutProduct from "./CheckoutProduct/CheckoutProduct";
 import { useStateValue } from "../../StateProvider/StateProvider";
 function Checkout() {
 	const [{ basket }, dispatch] = useStateValue();
+// to scroll the page to the top when mounted
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
-		<div className="checkout ">
+		<div className="checkout">
 			<div className="checkout__left">
 				<img
 					className="checkout__ad"
